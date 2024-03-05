@@ -2,10 +2,10 @@ import { View, Text, ImageBackground, StyleSheet, TextInput, TouchableOpacity } 
 import React from 'react'
 
 
-export default function Login({ navigation }) {
+export default function Login({navigation}) {
   return (
     
-    <ImageBackground source={require("./img/leaves (1).jpg")} style={{height:'100%'}}>
+    <ImageBackground source={require("./img/green-leaves.jpg")} style={{height:'100%'}}>
         <View style={styles.container}>
         <Text style={{color:'white',fontSize:64, fontWeight:'bold', marginVertical:20, textAlign:'center', marginRight:70}}>Login</Text>
         <View style={styles.bg}>
@@ -23,7 +23,7 @@ export default function Login({ navigation }) {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={{backgroundColor:'green', borderRadius:100, alignItems:'center', width:310, paddingVertical:10 , marginVertical:200, marginRight:95}}>
+          <TouchableOpacity  style={{backgroundColor:'green', borderRadius:100, alignItems:'center', width:310, paddingVertical:10 , marginVertical:200, marginRight:95}}>
         <Text style={{color:'white', fontSize:25, fontWeight:'bold'}}>Login</Text>
         </TouchableOpacity>
         <View>

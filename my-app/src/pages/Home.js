@@ -2,9 +2,9 @@ import { View, Text, ImageBackground, TouchableOpacity, StyleSheet } from 'react
 import React from 'react'
 
 
-export default function Home({ navigation }) {
+export default function Home({navigation}) {
   return (
-      <ImageBackground source={require("./img/leaves (1).jpg")} style={{height:'100%'}}>
+      <ImageBackground source={require("./img/green-leaves.jpg")} style={{height:'100%'}}>
         <View style={[styles.container, styles.shadowProp]}>
         <Text style={{color:'white', fontSize: 54 , textAlign:'center'}}>Let's strat</Text>
         <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={{backgroundColor:'green', borderRadius:100, alignItems:'center', width:250, paddingVertical:5 , marginVertical:10}}>
